@@ -1,5 +1,7 @@
-# React + Vite
 # This is my personal portfolio.
 
-## Yarn
-## tailwind css
+## 1.Install yarn with: 
+npm i yarn.
+
+## 2.tailwind css:
+Install Tailwind CSS with Vite.
