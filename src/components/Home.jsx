@@ -1,10 +1,10 @@
 import { BentoGrid } from "./BentoGrid";
 import { useEffect, useState } from "react";
 
-import gifexpertapp from '../mp4/gifexpertapp.mp4';
+import gifexpertapp from "/gifexpertapp.mp4";
+import goldbricks from "/gold-bricks.png";
 
 export const Home = () => {
-
     const [playVideo, setPlayVideo] = useState(true);
 
     useEffect(() => {
@@ -18,33 +18,50 @@ export const Home = () => {
     }, [playVideo]);
 
     return (
-        <>
+        <div className="mx-5">
             <BentoGrid />
 
             <div className="flex flex-col pt-40">
-                <h4 className="text-yellow-400 font-bold text-3xl text-center mb-10">Proyectos</h4>
-                <div
-                    className='grid grid-cols-1 gap-10 m-10 p-10 md:grid-cols-2 rounded-xl border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg'>
-                    <section >
-                        <h4 className="text-white text-3xl my-4 text-center ">
-                            Gif Expert App
+                <h4 id="proyectos" className="text-white font-bold text-4xl text-center">
+                    Proyectos
+                </h4>
+                <div className="grid grid-cols-1 gap-10 m-5 p-5 md:grid-cols-2 rounded-xl">
+                    <section className="border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg rounded-xl">
+                        <h4 className="text-blue-100 font-bold text-3xl my-4 text-center">
+                            Gold Bricks
                         </h4>
-                        <a href="https://nicogg-dev.github.io/react-gif-expert/" target="_blank">
-                            <video
-                                className="rounded-xl lg:block"
-                                src={gifexpertapp}
-                                autoPlay={playVideo}
-                                muted loop />
+                        <a
+                            href="https://gold-brig.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img
+                                className="rounded-md"
+                                src={goldbricks}
+                            />
                         </a>
                     </section>
-                    <section>
-                        <h4 className="text-white text-3xl my-4 text-center ">
+                    <section className="border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg rounded-xl">
+                        <h4 className="text-blue-100 font-bold text-3xl my-4 text-center ">
                             Gif Expert App
                         </h4>
-                        <img className="rounded-lg" alt="" />
+                        <a
+                            className="w-full h-full"
+                            href="https://nicogg-dev.github.io/react-gif-expert/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <video
+                                className="rounded-md"
+                                src={gifexpertapp}
+                                autoPlay={playVideo}
+                                muted
+                                loop
+                            />
+                        </a>
                     </section>
                 </div>
             </div>
-        </>
+        </div>
     );
 };

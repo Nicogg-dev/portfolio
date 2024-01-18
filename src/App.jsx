@@ -4,7 +4,7 @@ import { Nav } from './components/Nav'
 function App() {
 
   return (
-    <div className='h-full flex-row'>
+    <div className='h-full flex flex-col'>
       <Nav />
       <Home />
     </div>
