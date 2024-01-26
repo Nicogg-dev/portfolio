@@ -142,67 +142,67 @@ export const BentoGrid = () => {
                     <section className="flex flex-col justify-center items-center ">
                         <RiJavascriptFill
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 shadow-2xl text-sm">
+                        <p className="text-yellow-50 shadow-2xl text-sm">
                             JavaScript
                         </p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <DiReact
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">React</p>
+                        <p className="text-yellow-50 text-sm">React</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiReduxsaga
-                            className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            className="text-3xl text-yellow-50"
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">Redux</p>
+                        <p className="text-yellow-50 text-sm">Redux</p>
                     </section>
                     <section className="flex flex-col justify-center items-center ">
                         <DiNodejs
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">Nodejs</p>
+                        <p className="text-yellow-50 text-sm">Nodejs</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiPhp
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">PHP</p>
+                        <p className="text-yellow-50 text-sm">PHP</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiCodeigniter
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">Codeigniter</p>
+                        <p className="text-yellow-50 text-sm">Codeigniter</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <DiMysql
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">MySQL</p>
+                        <p className="text-yellow-50  text-sm">MySQL</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiTailwindcss
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-yellow-100 text-sm">TailwindCSS</p>
+                        <p className="text-yellow-50 text-sm">TailwindCSS</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiBootstrap
                             className="text-3xl"
-                            style={{ color: "#FDD90A" }}
+                            style={{ color: "#FFFA7F" }}
                         />
-                        <p className="text-gray-200 text-sm">Bootstrap</p>
+                        <p className="text-yellow-50  text-sm">Bootstrap</p>
                     </section>
                 </div>
             </div>
