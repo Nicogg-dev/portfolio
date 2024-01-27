@@ -1,7 +1,10 @@
 # This is my personal portfolio.
 
 ## 1.Install yarn with: 
-npm i yarn.
+npm i yarn
 
-## 2.tailwind css:
-Install Tailwind CSS with Vite.
+## 2.yarn:
+yarn to install dependencies.
+
+## 3.run proyect:
+yarn run dev
