@@ -78,8 +78,7 @@ export const BentoGrid = () => {
                     </p>
                     <p className="text-gray-400 font-medium">
                         Tengo facilidad para relacionarme con las personas, me
-                        gusta enfrentar los obstáculos que se presentan y mi
-                        misión en la vida es nunca dejar de aprender.
+                        gusta enfrentar los obstáculos que se presentan, me encanta trabajar en conjunto y compartir experiencias.
                     </p>
                 </div>
             </div>
