@@ -22,12 +22,15 @@ export const Home = () => {
             <BentoGrid />
 
             <div className="flex flex-col pt-40">
-                <h4 id="proyectos" className="text-white font-bold text-4xl text-center">
+                <h4
+                    id="proyectos"
+                    className="text-white font-bold text-4xl text-center"
+                >
                     Proyectos
                 </h4>
                 <div className="grid grid-cols-1 gap-10 m-5 p-5 md:grid-cols-2 rounded-xl">
                     <section className="border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg rounded-xl">
-                        <h4 className="text-blue-100 font-bold text-3xl my-4 text-center">
+                        <h4 className="text-yellow-100 font-bold text-3xl my-4 text-center">
                             Gold Bricks
                         </h4>
                         <a
@@ -35,14 +38,17 @@ export const Home = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img
-                                className="rounded-md"
-                                src={goldbricks}
-                            />
+                            <img className="rounded-md" src={goldbricks} />
                         </a>
+                        <p className="text-gray-400 font-medium p-4">
+                            Proyecto para la empresa Gold Bricks, para arriendo y venta de: lotes, casas, bodegas, locales y mucho mas.
+                        </p>
+                        <p className="text-gray-400 font-medium pb-4 px-4">
+                            A pedido de un cliente, este proyecto fue realizado con typescript en nextjs, y coneccion con base de datos en sanity, utilizando tailwindcss para el diseño.
+                        </p>
                     </section>
                     <section className="border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg rounded-xl">
-                        <h4 className="text-blue-100 font-bold text-3xl my-4 text-center ">
+                        <h4 className="text-yellow-100 font-bold text-3xl my-4 text-center ">
                             Gif Expert App
                         </h4>
                         <a
@@ -59,6 +65,12 @@ export const Home = () => {
                                 loop
                             />
                         </a>
+                        <p className="text-gray-400 font-medium p-4">
+                            Proyecto realizado en React, utilizando hooks, y consumiendo la api de giphy.
+                        </p>
+                        <p className="text-gray-400 font-medium pb-4 px-4">
+                            Este proyecto fue realizado siguiendo el curso de React de Fernando Herrera.
+                        </p>
                     </section>
                 </div>
             </div>
