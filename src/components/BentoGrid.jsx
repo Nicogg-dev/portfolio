@@ -73,12 +73,11 @@ export const BentoGrid = () => {
                     <p className="text-gray-400 font-medium mt-3">
                         Estudiante de ultimos semestres de Ingeniería eléctrica,
                         he realizado varios proyectos en el ambito de la
-                        electronica desarrollando circuitos electronicos y
-                        programando en lenguaje C.
+                        electronica desarrollando circuitos electronicos.
                     </p>
                     <p className="text-gray-400 font-medium">
                         Tengo facilidad para relacionarme con las personas, me
-                        gusta enfrentar los obstáculos que se presentan, me encanta trabajar en conjunto y compartir experiencias.
+                        gusta enfrentar los obstáculos que se presentan, me emociona trabajar en conjunto y compartir experiencias.
                     </p>
                 </div>
             </div>
