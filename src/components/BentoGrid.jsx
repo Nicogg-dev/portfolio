@@ -30,8 +30,8 @@ export const BentoGrid = () => {
     }, [playVideo]);
 
     return (
-        <div className="md:mt-20 grid auto-rows-[140px] 2xl:auto-rows-[200px] grid-cols-4 md:grid-cols-4 gap-5 m-5 md:mx-10 opacity-95 light">
-            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-4 bg-gradient-to-bl from-blue-950 to-black shadow-lg bg-opacity-70">
+        <div className="md:mt-20 grid auto-rows-[170px] 2xl:auto-rows-[200px] grid-cols-4 md:grid-cols-4 gap-5 m-5 md:mx-10 opacity-95 light">
+            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-8 bg-gradient-to-bl from-blue-950 to-black shadow-lg bg-opacity-70">
                 <span className="flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl mt-2 text-gray-200 font-bold">
                         <span className="text-transparent bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 bg-clip-text">
