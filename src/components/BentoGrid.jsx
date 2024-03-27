@@ -29,13 +29,12 @@ export const BentoGrid = () => {
     }, [playVideo]);
 
     return (
-        <div className="md:mt-20 grid auto-rows-[165px] 2xl:auto-rows-[240px] grid-cols-4 md:grid-cols-4 gap-5 m-10 opacity-95">
-            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 bg-gradient-to-bl from-pink-200 to-pink-800 p-4 dark:bg-gradient-to-bl dark:from-blue-950 dark:to-black shadow-lg bg-opacity-60">
+        <div className="md:mt-20 grid auto-rows-[160px] 2xl:auto-rows-[220px] grid-cols-4 md:grid-cols-4 gap-5 m-5 md:mx-10 opacity-95">
+            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 bg-gradient-to-bl from-pink-200 to-pink-800 p-4 dark:bg-gradient-to-bl dark:from-blue-950 dark:to-black shadow-lg bg-opacity-70">
                 <span className="flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl mt-2 text-gray-200 font-bold">
-                        <span className="text-gray-300">Nico</span>las{" "}
-                        <span className="text-gray-100">
-                            <span className="text-gray-200">Gira</span>ldo
+                        <span className="text-transparent bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 bg-clip-text">
+                            Nicolas Giraldo
                         </span>
                     </h2>
                 </span>
@@ -43,32 +42,6 @@ export const BentoGrid = () => {
                     <span className="text-gray-400">Junior</span>{" "}
                     <span className="text-blue-500">Full-Stack</span> developer
                 </p>
-                <div className="flex flex-row items-center justify-start gap-4">
-                    <a
-                        href="https://www.linkedin.com/in/nicolas-giraldo05"
-                        target="_blank"
-                        className="flex flex-row text-blue-100 items-center gap-1"
-                        rel="noreferrer"
-                    >
-                        <FaLinkedin
-                            className="text-3xl"
-                            style={{ color: "white" }}
-                        />
-                        LinkedIn
-                    </a>
-                    <a
-                        href="https://github.com/Nicogg-dev"
-                        target="_blank"
-                        className="flex flex-row text-blue-100 items-center gap-1"
-                        rel="noreferrer"
-                    >
-                        <FaGithub
-                            className="text-3xl"
-                            style={{ color: "white" }}
-                        />
-                        GitHub
-                    </a>
-                </div>
                 <div className="flex flex-col items-center justify-start gap-4 text-sm md:text-base">
                     <p className="text-gray-400 font-medium mt-3">
                         Estudiante de ultimos semestres de Ingeniería eléctrica,
@@ -82,18 +55,20 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-t from-blue-900 to-white p-4 dark:bg-gradient-to-b dark:from-blue-900 dark:to-blue-950 shadow-lg pt-14">
+            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-t from-blue-900 to-white p-4 dark:bg-gradient-to-b dark:from-blue-800 shadow-lg pt-14">
                 <img
                     className="h-12 w-auto absolute top-8"
                     src={colombia}
                     alt="Bandera de Colombia"
                 />
-                <h4 className="text-3xl md:text-4xl text-white font-medium">
-                    Colombia
+                <h4 className="text-3xl md:text-4xl font-semibold ml-6 m-4">
+                    <span className="text-transparent bg-gradient-to-r from-yellow-400 via-blue-600 to-red-500 bg-clip-text">
+                        Colombia
+                    </span>
                 </h4>
             </div>
 
-            <div className="row-span-1 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-1 rounded-xl p-0 border-y-2 border-blue-500/60 bg-gradient-to-t from-white to-blue-200 dark:bg-gradient-to-t dark:from-black dark:to-blue-900 shadow-lg">
+            <div className="row-span-2 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-1 rounded-xl p-0 border-y-2 border-blue-800/60 bg-gradient-to-t shadow-lg">
                 <video
                     className="object-cover h-full w-full rounded-xl lg:block"
                     src={arbolrojo}
@@ -101,6 +76,33 @@ export const BentoGrid = () => {
                     muted
                     loop
                 />
+            </div>
+
+            <div className="flex row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 justify-center border-blue-500/60 bg-gradient-to-t from-blue-900 to-white dark:bg-gradient-to-b dark:from-blue-900 dark:to-blue-950" >
+                <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-8">
+                    <a
+                        href="https://www.linkedin.com/in/nicolas-giraldo05"
+                        target="_blank"
+                        className="flex flex-row text-black items-center gap-1"
+                        rel="noreferrer"
+                    >
+                        <FaLinkedin
+                            className="text-5xl md:text-6xl"
+                            style={{ color: "black" }}
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/Nicogg-dev"
+                        target="_blank"
+                        className="flex flex-row text-black items-center gap-1"
+                        rel="noreferrer"
+                    >
+                        <FaGithub
+                            className="text-5xl md:text-6xl"
+                            style={{ color: "black" }}
+                        />
+                    </a>
+                </div>
             </div>
 
             <div className="hidden lg:flex col-span-2 md:col-span-1 row-span-1 justify-center rounded-xl border-t-2 border-slate-600/30 bg-gradient-to-t from-white to-blue-200 p-4 dark:bg-gradient-to-br dark:from-blue-700 dark:to-black shadow-lg">
@@ -132,15 +134,17 @@ export const BentoGrid = () => {
 
             <div className="hidden lg:flex lg:h-52 row-span-1 rounded-xl border-b-2 border-blue-700/40 bg-gradient-to-t from-white to-blue-200 p-4 dark:bg-gradient-to-t dark:from-blue-950 dark:to-black shadow-lg"></div>
 
-            <div className="flex flex-col h-52 row-span-1 col-span-4 md:col-span-4 lg:col-span-2 rounded-xl border-y-2 p-1  border-blue-400/50 hover:border-y-2 hover:border-blue-300/90 bg-gradient-to-t from-white to-blue-200 dark:bg-gradient-to-t dark:from-blue-950 dark:to-black shadow-lg">
-                <h4 className="text-white text-3xl font-semibold ml-5 mt-2">
-                    Tecnologias
+            <div className="flex flex-col h-80 md:h-72 row-span-3 col-span-4 md:col-span-4 lg:col-span-3 rounded-xl border-y-2 p-1 border-b-blue-500 border-t-blue-950/80 bg-gradient-to-t hover:border-t-blue-800 hover:border-b-blue-300 from-blue-950 to-white dark:bg-gradient-to-t dark:from-blue-800 dark:to-black shadow-lg">
+                <h4 className="text-4xl font-semibold ml-2 md:ml-6 m-4">
+                    <span className="text-transparent bg-gradient-to-r from-blue-300 via-blue-500 to-blue-300 bg-clip-text">
+                        Tecnologias
+                    </span>
                 </h4>
-                <div className="grid place-items-center grid-cols-5 gap-4 m-4 pb-2">
-                    <section className="flex flex-col justify-center items-center ">
+                <div className="grid place-items-center grid-cols-4 md:grid-cols-5 gap-5 m-4 ml-2 md:ml-0 pb-2">
+                    <section className="flex flex-col justify-center items-center">
                         <RiJavascriptFill
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl text-bold"
+                            style={{ color: "#ffffff" }}
                         />
                         <p className="text-yellow-50 shadow-2xl text-sm">
                             JavaScript
@@ -148,63 +152,63 @@ export const BentoGrid = () => {
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <DiReact
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50 text-sm">React</p>
+                        <p className="text-blue-50 text-sm">React</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiReduxsaga
-                            className="text-3xl text-yellow-50"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl text-blue-50"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50 text-sm">Redux</p>
+                        <p className="text-blue-50 text-sm">Redux</p>
                     </section>
                     <section className="flex flex-col justify-center items-center ">
                         <DiNodejs
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50 text-sm">Nodejs</p>
+                        <p className="text-blue-50 text-sm">Nodejs</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiPhp
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50 text-sm">PHP</p>
+                        <p className="text-blue-50 text-sm">PHP</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiCodeigniter
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50 text-sm">Codeigniter</p>
+                        <p className="text-blue-50 text-sm">Codeigniter</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <DiMysql
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50  text-sm">MySQL</p>
+                        <p className="text-blue-50  text-sm">MySQL</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiTailwindcss
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50 text-sm">TailwindCSS</p>
+                        <p className="text-blue-50 text-sm">TailwindCSS</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiBootstrap
-                            className="text-3xl"
-                            style={{ color: "#FFFA7F" }}
+                            className="text-4xl"
+                            style={{ color: "#ffffff" }}
                         />
-                        <p className="text-yellow-50  text-sm">Bootstrap</p>
+                        <p className="text-blue-50  text-sm">Bootstrap</p>
                     </section>
                 </div>
             </div>
-            
+
         </div>
     );
 };
