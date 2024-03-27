@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaHtml5, FaCss3 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiNodejs, DiMysql, DiReact } from "react-icons/di";
@@ -30,7 +30,7 @@ export const BentoGrid = () => {
     }, [playVideo]);
 
     return (
-        <div className="md:mt-20 grid auto-rows-[160px] 2xl:auto-rows-[220px] grid-cols-4 md:grid-cols-4 gap-5 m-5 md:mx-10 opacity-95 light">
+        <div className="md:mt-20 grid auto-rows-[140px] 2xl:auto-rows-[200px] grid-cols-4 md:grid-cols-4 gap-5 m-5 md:mx-10 opacity-95 light">
             <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-4 bg-gradient-to-bl from-blue-950 to-black shadow-lg bg-opacity-70">
                 <span className="flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl mt-2 text-gray-200 font-bold">
@@ -56,9 +56,9 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 p-4 bg-gradient-to-b from-blue-800 shadow-lg pt-14">
+            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 p-4 bg-gradient-to-b from-blue-800 shadow-lg pt-5">
                 <img
-                    className="h-12 w-auto absolute top-8"
+                    className="h-7 w-auto absolute top-7"
                     src={colombia}
                     alt="Bandera de Colombia"
                 />
@@ -140,77 +140,95 @@ export const BentoGrid = () => {
                 </a>
             </div>
 
-            <div className="flex flex-col h-80 md:h-64 row-span-3 col-span-4 md:col-span-4 rounded-xl border-y-2 p-1 border-b-blue-500 border-t-blue-950/80 hover:border-t-blue-800 hover:border-b-blue-300 bg-gradient-to-t from-blue-900 to-black shadow-lg">
+            <div className="flex flex-col h-80 md:h-60 row-span-3 col-span-4 md:col-span-4 rounded-xl border-y-2 p-1 border-b-blue-500 border-t-blue-950/80 hover:border-t-blue-800 hover:border-b-blue-300 bg-gradient-to-t from-blue-900 to-black shadow-lg">
                 <h4 className="text-4xl font-semibold ml-2 md:ml-6 m-4">
                     <span className="text-transparent bg-gradient-to-r from-blue-300 via-blue-500 to-blue-300 bg-clip-text">
                         Tecnologias
                     </span>
                 </h4>
-                <div className="grid place-items-center grid-cols-4 md:grid-cols-7 gap-3 m-3 ml-2 md:ml-0 pb-2">
+                <div className="grid place-items-center grid-cols-4 md:grid-cols-9 m-3 ml-2 md:ml-0 pb-2 gap-y-3">
+                    <section className="flex flex-col justify-center items-center">
+                        <FaHtml5
+                            className="text-4xl"
+                            style={{ color: "#E5532D" }}
+                        />
+                        <p className="text-yellow-50 shadow-2xl text-sm font-medium">
+                            HTML
+                        </p>
+                    </section>
+                    <section className="flex flex-col justify-center items-center">
+                        <FaCss3 
+                            className="text-4xl"
+                            style={{ color: "#2D53E5" }}
+                        />
+                        <p className="text-yellow-50 shadow-2xl text-sm font-medium">
+                            CSS
+                        </p>
+                    </section>
                     <section className="flex flex-col justify-center items-center">
                         <RiJavascriptFill
-                            className="text-4xl text-bold"
-                            style={{ color: "#ffffff" }}
+                            className="text-4xl"
+                            style={{ color: "#F7E025" }}
                         />
-                        <p className="text-yellow-50 shadow-2xl text-sm">
+                        <p className="text-yellow-50 shadow-2xl text-sm font-medium">
                             JavaScript
                         </p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <DiReact
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#1BA1CC" }}
                         />
-                        <p className="text-blue-50 text-sm">React</p>
+                        <p className="text-blue-50 text-sm font-medium">React</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiReduxsaga
-                            className="text-4xl text-blue-50"
-                            style={{ color: "#ffffff" }}
+                            className="text-4xl"
+                            style={{ color: "#7A50BE" }}
                         />
-                        <p className="text-blue-50 text-sm">Redux</p>
+                        <p className="text-blue-50 text-sm font-medium">Redux</p>
                     </section>
                     <section className="flex flex-col justify-center items-center ">
                         <DiNodejs
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#8FC708" }}
                         />
-                        <p className="text-blue-50 text-sm">Nodejs</p>
+                        <p className="text-blue-50 text-sm font-medium">Nodejs</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiPhp
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#7B7FB5" }}
                         />
-                        <p className="text-blue-50 text-sm">PHP</p>
+                        <p className="text-blue-50 text-sm font-medium">PHP</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiCodeigniter
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#F0472A" }}
                         />
-                        <p className="text-blue-50 text-sm">Codeigniter</p>
+                        <p className="text-blue-50 text-sm font-medium">Codeigniter</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <DiMysql
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#086590" }}
                         />
-                        <p className="text-blue-50  text-sm">MySQL</p>
+                        <p className="text-blue-50  text-sm font-medium">MySQL</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiTailwindcss
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#3ebff8" }}
                         />
-                        <p className="text-blue-50 text-sm">TailwindCSS</p>
+                        <p className="text-blue-50 text-sm font-medium">TailwindCSS</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <SiBootstrap
                             className="text-4xl"
-                            style={{ color: "#ffffff" }}
+                            style={{ color: "#761af7" }}
                         />
-                        <p className="text-blue-50  text-sm">Bootstrap</p>
+                        <p className="text-blue-50  text-sm font-medium">Bootstrap</p>
                     </section>
                 </div>
             </div>

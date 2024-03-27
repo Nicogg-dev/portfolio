@@ -34,23 +34,23 @@ export const Home = () => {
                     className="text-white font-bold text-4xl text-center"
                 >
                     <span className="text-transparent bg-gradient-to-r from-blue-200 via-blue-500 to-blue-200 bg-clip-text">
-                        Experiencia y Proyextos
+                        Experiencia y Proyectos
                     </span>
                 </h4>
 
-                <div className="grid grid-cols-1 gap-10 m-5 p-5 md:grid-cols-2 rounded-xl">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mx-2 p-2 rounded-xl">
+
                     <section className="grid grid-cols-5 shadow-lg rounded-lg">
-                        <div className="col-span-3">
+                        <div className="flex col-span-5 md:col-span-3 justify-center">
                             <a
                                 href="https://gold-brig.vercel.app/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <img className="rounded-md w-80 h-72 object-cover" src={goldbricks} style={{ aspectRatio: 16 / 9 }} />
+                                <img className="rounded-md w-96 lg:w-72 h-72 object-cover" src={goldbricks} style={{ aspectRatio: 16 / 9 }} />
                             </a>
                         </div>
-
-                        <div className="flex flex-col col-span-2">
+                        <div className="flex flex-col col-span-5 md:col-span-2 pl-2 items-center md:items-start">
                             <h4 className="text-indigo-200 font-bold text-2xl pb-2">
                                 Gold Bricks
                             </h4>
@@ -68,33 +68,32 @@ export const Home = () => {
                                     style={{ color: "#ffffff" }}
                                 />
                             </div>
-
-                            <p className="text-gray-300 font-medium pt-1">
-                                Proyecto a pedido de un cliente, para arriendo y venta de: lotes, casas, bodegas, locales y mucho mas
-                                Golden Bricks, fue realizado con typescript en nextjs, y coneccion con base de datos en sanity, utilizando tailwindcss para el diseño.
+                            <p className="min-[0px]:hidden min-[768px]:block text-gray-300 font-medium pt-1">
+                                Proyecto a pedido de un cliente, para arriendo y venta de: lotes, casas, bodegas, locales y mucho mas.
+                                Golden Bricks, fue realizado con typescript en nextjs, y conección con base de datos en sanity, utilizando tailwindcss para el diseño.
                             </p>
                         </div>
                     </section>
 
 
                     <section className="grid grid-cols-5 shadow-lg rounded-lg">
-                        <div className="col-span-3">
+                        <div className="flex col-span-5 md:col-span-3 justify-center">
                             <a
-                                className="w-full h-full"
                                 href="https://nicogg-dev.github.io/react-gif-expert/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <video
-                                    className="rounded-md w-80 h-72 object-cover"
+                                    className="rounded-md w-96 lg:w-72 h-72 object-cover"
                                     src={gifexpertapp}
+                                    style={{ aspectRatio: 16 / 9 }} 
                                     autoPlay={playVideo}
                                     muted
                                     loop
                                 />
                             </a>
                         </div>
-                        <div className="flex flex-col col-span-2">
+                        <div className="flex flex-col col-span-5 md:col-span-2 pl-2 items-center md:items-start">
                             <h4 className="text-indigo-200 font-bold text-2xl pb-2">
                                 Gif Expert App
                             </h4>
@@ -108,8 +107,7 @@ export const Home = () => {
                                     style={{ color: "#ffffff" }}
                                 />
                             </div>
-
-                            <p className="text-gray-300 font-medium pt-1">
+                            <p className="min-[0px]:hidden min-[768px]:block text-gray-300 font-medium pt-1">
                                 Proyecto realizado en React, utilizando hooks, y consumiendo la api de giphy.
                                 Este proyecto fue realizado siguiendo el curso de React de Fernando Herrera.
                             </p>
