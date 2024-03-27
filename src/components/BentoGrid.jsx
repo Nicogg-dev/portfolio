@@ -30,7 +30,7 @@ export const BentoGrid = () => {
 
     return (
         <div className="md:mt-20 grid auto-rows-[165px] 2xl:auto-rows-[240px] grid-cols-4 md:grid-cols-4 gap-5 m-10 opacity-95">
-            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-red-600/40 hover:border-red-400/60 bg-gradient-to-bl from-pink-200 to-pink-800 p-4 dark:bg-gradient-to-bl dark:from-red-950 dark:to-black shadow-lg bg-opacity-60">
+            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 bg-gradient-to-bl from-pink-200 to-pink-800 p-4 dark:bg-gradient-to-bl dark:from-blue-950 dark:to-black shadow-lg bg-opacity-60">
                 <span className="flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl mt-2 text-gray-200 font-bold">
                         <span className="text-gray-300">Nico</span>las{" "}
@@ -41,13 +41,13 @@ export const BentoGrid = () => {
                 </span>
                 <p className="text-xl md:text-2xl text-gray-100 font-extralight mt-2 mb-2">
                     <span className="text-gray-400">Junior</span>{" "}
-                    <span className="text-red-500">Full-Stack</span> developer
+                    <span className="text-blue-500">Full-Stack</span> developer
                 </p>
                 <div className="flex flex-row items-center justify-start gap-4">
                     <a
                         href="https://www.linkedin.com/in/nicolas-giraldo05"
                         target="_blank"
-                        className="flex flex-row text-red-100 items-center gap-1"
+                        className="flex flex-row text-blue-100 items-center gap-1"
                         rel="noreferrer"
                     >
                         <FaLinkedin
@@ -59,7 +59,7 @@ export const BentoGrid = () => {
                     <a
                         href="https://github.com/Nicogg-dev"
                         target="_blank"
-                        className="flex flex-row text-red-100 items-center gap-1"
+                        className="flex flex-row text-blue-100 items-center gap-1"
                         rel="noreferrer"
                     >
                         <FaGithub
@@ -82,7 +82,7 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-red-500/60 bg-gradient-to-t from-red-900 to-white p-4 dark:bg-gradient-to-b dark:from-red-900 dark:to-red-950 shadow-lg pt-14">
+            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-t from-blue-900 to-white p-4 dark:bg-gradient-to-b dark:from-blue-900 dark:to-blue-950 shadow-lg pt-14">
                 <img
                     className="h-12 w-auto absolute top-8"
                     src={colombia}
@@ -93,7 +93,7 @@ export const BentoGrid = () => {
                 </h4>
             </div>
 
-            <div className="row-span-1 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-1 rounded-xl p-0 border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg">
+            <div className="row-span-1 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-1 rounded-xl p-0 border-y-2 border-blue-500/60 bg-gradient-to-t from-white to-blue-200 dark:bg-gradient-to-t dark:from-black dark:to-blue-900 shadow-lg">
                 <video
                     className="object-cover h-full w-full rounded-xl lg:block"
                     src={arbolrojo}
@@ -103,7 +103,7 @@ export const BentoGrid = () => {
                 />
             </div>
 
-            <div className="hidden lg:flex col-span-2 md:col-span-1 row-span-1 justify-center rounded-xl border-t-2 border-slate-600/30 bg-gradient-to-t from-white to-red-200 p-4 dark:bg-gradient-to-br dark:from-red-700 dark:to-black shadow-lg">
+            <div className="hidden lg:flex col-span-2 md:col-span-1 row-span-1 justify-center rounded-xl border-t-2 border-slate-600/30 bg-gradient-to-t from-white to-blue-200 p-4 dark:bg-gradient-to-br dark:from-blue-700 dark:to-black shadow-lg">
                 <a
                     className="flex flex-col justify-center items-center h-full w-full p-4 font-bold"
                     target="_blank"
@@ -128,11 +128,11 @@ export const BentoGrid = () => {
                 </a>
             </div>
 
-            <div className="hidden lg:flex lg:h-52 row-span-1 rounded-xl border-l-2 border-slate-700/10 bg-gradient-to-t from-white to-red-200 p-4 dark:bg-gradient-to-t dark:from-red-950 dark:to-black shadow-lg"></div>
+            <div className="hidden lg:flex lg:h-52 row-span-1 rounded-xl border-l-2 border-slate-700/10 bg-gradient-to-t from-white to-blue-200 p-4 dark:bg-gradient-to-t dark:from-blue-950 dark:to-black shadow-lg"></div>
 
-            <div className="hidden lg:flex lg:h-52 row-span-1 rounded-xl border-b-2 border-red-700/40 bg-gradient-to-t from-white to-red-200 p-4 dark:bg-gradient-to-t dark:from-red-950 dark:to-black shadow-lg"></div>
+            <div className="hidden lg:flex lg:h-52 row-span-1 rounded-xl border-b-2 border-blue-700/40 bg-gradient-to-t from-white to-blue-200 p-4 dark:bg-gradient-to-t dark:from-blue-950 dark:to-black shadow-lg"></div>
 
-            <div className="flex flex-col h-52 row-span-1 col-span-4 md:col-span-4 lg:col-span-2 rounded-xl border-y-2 p-1  border-red-400/50 hover:border-y-2 hover:border-red-300/90 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-red-950 dark:to-black shadow-lg">
+            <div className="flex flex-col h-52 row-span-1 col-span-4 md:col-span-4 lg:col-span-2 rounded-xl border-y-2 p-1  border-blue-400/50 hover:border-y-2 hover:border-blue-300/90 bg-gradient-to-t from-white to-blue-200 dark:bg-gradient-to-t dark:from-blue-950 dark:to-black shadow-lg">
                 <h4 className="text-white text-3xl font-semibold ml-5 mt-2">
                     Tecnologias
                 </h4>

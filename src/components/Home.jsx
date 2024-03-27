@@ -29,7 +29,7 @@ export const Home = () => {
                     Proyectos
                 </h4>
                 <div className="grid grid-cols-1 gap-10 m-5 p-5 md:grid-cols-2 rounded-xl">
-                    <section className="border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg rounded-xl">
+                    <section className="border-y-2 border-blue-800/80 bg-gradient-to-t from-white to-blue-900 dark:bg-gradient-to-t dark:from-black dark:to-blue-950 shadow-lg rounded-xl">
                         <h4 className="text-yellow-100 font-bold text-3xl my-4 text-center">
                             Gold Bricks
                         </h4>
@@ -47,7 +47,7 @@ export const Home = () => {
                             A pedido de un cliente, este proyecto fue realizado con typescript en nextjs, y coneccion con base de datos en sanity, utilizando tailwindcss para el diseño.
                         </p>
                     </section>
-                    <section className="border-y-2 border-red-500/60 bg-gradient-to-t from-white to-red-200 dark:bg-gradient-to-t dark:from-black dark:to-red-900 shadow-lg rounded-xl">
+                    <section className="border-y-2 border-blue-500/60 bg-gradient-to-t from-white to-blue-200 dark:bg-gradient-to-t dark:from-black dark:to-blue-950 shadow-lg rounded-xl">
                         <h4 className="text-yellow-100 font-bold text-3xl my-4 text-center ">
                             Gif Expert App
                         </h4>
