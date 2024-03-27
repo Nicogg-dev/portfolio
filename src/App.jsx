@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className='h-full flex flex-col'>
-      <ParticlesComponent id="particles" />
       <Nav />
+      <ParticlesComponent id="particles" />
       <Home />
     </div>
   )

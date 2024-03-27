@@ -7,6 +7,8 @@ import goldbricks from "/gold-bricks.png";
 import { SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
+import { SiSanity } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 
 export const Home = () => {
     const [playVideo, setPlayVideo] = useState(true);
@@ -49,10 +51,10 @@ export const Home = () => {
                         </div>
 
                         <div className="flex flex-col col-span-2">
-                            <h4 className="text-yellow-100 font-bold text-3xl pb-2 text-center">
+                            <h4 className="text-indigo-200 font-bold text-2xl pb-2">
                                 Gold Bricks
                             </h4>
-                            <div className="flex flex-row place-items-start gap-2">
+                            <div className="flex flex-row place-items-start gap-2 items-center">
                                 <SiTypescript
                                     className="text-4xl text-bold"
                                     style={{ color: "#ffffff" }}
@@ -61,9 +63,13 @@ export const Home = () => {
                                     className="text-4xl text-bold"
                                     style={{ color: "#ffffff" }}
                                 />
+                                <SiSanity
+                                    className="text-3xl text-bold"
+                                    style={{ color: "#ffffff" }}
+                                />
                             </div>
 
-                            <p className="text-gray-300 font-medium">
+                            <p className="text-gray-300 font-medium pt-1">
                                 Proyecto a pedido de un cliente, para arriendo y venta de: lotes, casas, bodegas, locales y mucho mas
                                 Golden Bricks, fue realizado con typescript en nextjs, y coneccion con base de datos en sanity, utilizando tailwindcss para el diseño.
                             </p>
@@ -89,21 +95,21 @@ export const Home = () => {
                             </a>
                         </div>
                         <div className="flex flex-col col-span-2">
-                            <h4 className="text-yellow-100 font-bold text-3xl pb-2 text-center">
+                            <h4 className="text-indigo-200 font-bold text-2xl pb-2">
                                 Gif Expert App
                             </h4>
-                            <div className="flex flex-row place-items-start gap-2">
-                                <FaReact
+                            <div className="flex flex-row place-items-start gap-2 items-center">
+                                <IoLogoJavascript
                                     className="text-4xl text-bold"
                                     style={{ color: "#ffffff" }}
                                 />
-                                <TbBrandNextjs
+                                <FaReact
                                     className="text-4xl text-bold"
                                     style={{ color: "#ffffff" }}
                                 />
                             </div>
 
-                            <p className="text-gray-300 font-medium">
+                            <p className="text-gray-300 font-medium pt-1">
                                 Proyecto realizado en React, utilizando hooks, y consumiendo la api de giphy.
                                 Este proyecto fue realizado siguiendo el curso de React de Fernando Herrera.
                             </p>
