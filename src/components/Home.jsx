@@ -21,7 +21,7 @@ export const Home = () => {
         <div className="mx-5">
             <BentoGrid />
 
-            <div className="flex flex-col pt-40">
+            <div className="flex flex-col pt-40 opacity-90">
                 <h4
                     id="proyectos"
                     className="text-white font-bold text-4xl text-center"

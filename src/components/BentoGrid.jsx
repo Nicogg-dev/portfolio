@@ -204,6 +204,7 @@ export const BentoGrid = () => {
                     </section>
                 </div>
             </div>
+            
         </div>
     );
 };
