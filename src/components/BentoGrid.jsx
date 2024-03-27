@@ -146,7 +146,7 @@ export const BentoGrid = () => {
                         Tecnologias
                     </span>
                 </h4>
-                <div className="grid place-items-center grid-cols-4 md:grid-cols-9 m-3 ml-2 md:ml-0 pb-2 gap-y-3">
+                <div className="grid place-items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-11 m-3 ml-2 md:ml-0 pb-2 gap-y-3">
                     <section className="flex flex-col justify-center items-center">
                         <FaHtml5
                             className="text-4xl"
@@ -164,6 +164,20 @@ export const BentoGrid = () => {
                         <p className="text-yellow-50 shadow-2xl text-sm font-medium">
                             CSS
                         </p>
+                    </section>
+                    <section className="flex flex-col justify-center items-center">
+                        <SiTailwindcss
+                            className="text-4xl"
+                            style={{ color: "#3ebff8" }}
+                        />
+                        <p className="text-blue-50 text-sm font-medium">TailwindCSS</p>
+                    </section>
+                    <section className="flex flex-col justify-center items-center">
+                        <SiBootstrap
+                            className="text-4xl"
+                            style={{ color: "#761af7" }}
+                        />
+                        <p className="text-blue-50  text-sm font-medium">Bootstrap</p>
                     </section>
                     <section className="flex flex-col justify-center items-center">
                         <RiJavascriptFill
@@ -215,20 +229,6 @@ export const BentoGrid = () => {
                             style={{ color: "#086590" }}
                         />
                         <p className="text-blue-50  text-sm font-medium">MySQL</p>
-                    </section>
-                    <section className="flex flex-col justify-center items-center">
-                        <SiTailwindcss
-                            className="text-4xl"
-                            style={{ color: "#3ebff8" }}
-                        />
-                        <p className="text-blue-50 text-sm font-medium">TailwindCSS</p>
-                    </section>
-                    <section className="flex flex-col justify-center items-center">
-                        <SiBootstrap
-                            className="text-4xl"
-                            style={{ color: "#761af7" }}
-                        />
-                        <p className="text-blue-50  text-sm font-medium">Bootstrap</p>
                     </section>
                 </div>
             </div>

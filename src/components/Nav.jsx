@@ -7,29 +7,29 @@ export const Nav = () => {
                         <img
                             className="h-10 w-auto z-10 sm:fixed"
                             src="/chopper.png"
-                            alt="Your Companyy"
+                            alt="logo"
                         />
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                         <div className="flex flex-shrink-0 items-center"></div>
-                        <div className="hidden sm:ml-6 sm:block ">
+                        <div className="min-[0px]:hidden min-[650px]:block sm:ml-6">
                             <div className="flex space-x-4">
                                 <a
                                     href="#"
-                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-yellow-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
+                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-blue-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
                                     aria-current="page"
                                 >
                                     Home
                                 </a>
                                 <a
                                     href="#"
-                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-yellow-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
+                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-blue-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
                                 >
                                     About
                                 </a>
                                 <a
                                     href="#proyectos"
-                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-yellow-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
+                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-blue-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
                                 >
                                     Projects
                                 </a>
@@ -43,20 +43,20 @@ export const Nav = () => {
                 <div className="space-y-1 px-2 pb-3 pt-2">
                     <a
                         href="#"
-                        className="hover:text-black hover:bg-gradient-to-r hover:from-yellow-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
+                        className="hover:text-black hover:bg-gradient-to-r hover:from-blue-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
                         aria-current="page"
                     >
                         Home
                     </a>
                     <a
                         href="#"
-                        className="hover:text-black hover:bg-gradient-to-r hover:from-yellow-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
+                        className="hover:text-black hover:bg-gradient-to-r hover:from-blue-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
                     >
                         About
                     </a>
                     <a
                         href="#"
-                        className="hover:text-black hover:bg-gradient-to-r hover:from-yellow-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
+                        className="hover:text-black hover:bg-gradient-to-r hover:from-blue-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
                     >
                         Projects
                     </a>

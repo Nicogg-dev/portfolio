@@ -38,7 +38,7 @@ export const Home = () => {
                     </span>
                 </h4>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mx-2 p-2 rounded-xl">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 mx-2 p-2 rounded-xl">
 
                     <section className="grid grid-cols-5 shadow-lg rounded-lg">
                         <div className="flex col-span-5 md:col-span-3 justify-center">
