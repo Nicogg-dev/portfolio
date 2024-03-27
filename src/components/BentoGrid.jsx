@@ -13,7 +13,8 @@ import {
 } from "react-icons/si";
 
 import colombia from "/colombia.png";
-import arbolrojo from "/arbolrojo.mp4";
+import beach from "/beach.mp4";
+
 
 export const BentoGrid = () => {
     const [playVideo, setPlayVideo] = useState(true);
@@ -71,7 +72,7 @@ export const BentoGrid = () => {
             <div className="row-span-2 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-1 rounded-xl p-0 border-y-2 border-blue-800/60 bg-gradient-to-t shadow-lg">
                 <video
                     className="object-cover h-full w-full rounded-xl lg:block"
-                    src={arbolrojo}
+                    src={beach}
                     autoPlay={playVideo}
                     muted
                     loop
