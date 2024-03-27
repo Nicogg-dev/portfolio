@@ -5,9 +5,6 @@ import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 // Importar el engine de manera relativa
-import "../../node_modules/@tsparticles/engine"; // Ajusta la ruta según la ubicación real de tu archivo
-
-
 
 const ParticlesComponent = (props) => {
 

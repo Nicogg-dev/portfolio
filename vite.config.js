@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@tsparticles/slim', '@tsparticles/engine']
+      external: ['@tsparticles/slim']
     }
   }
 });
