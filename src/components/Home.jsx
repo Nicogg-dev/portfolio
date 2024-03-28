@@ -28,7 +28,7 @@ export const Home = () => {
             <BentoGrid />
 
             {/* Experiencias y proyectos */}
-            <div className="flex flex-col opacity-90">
+            <div className="flex flex-col opacity-90 mt-40 md:mt-0">
                 <h4
                     id="proyectos"
                     className="text-white font-bold text-4xl text-center"

@@ -30,8 +30,9 @@ export const BentoGrid = () => {
     }, [playVideo]);
 
     return (
-        <div className="md:mt-20 grid auto-rows-[170px] 2xl:auto-rows-[200px] grid-cols-4 md:grid-cols-4 gap-5 m-5 md:mx-10 opacity-95 light">
-            <div className="row-span-2 col-span-4 lg:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-8 bg-gradient-to-bl from-blue-950 to-black shadow-lg bg-opacity-70">
+        <div className="md:mt-20 grid grid-rows-4 lg:h-[47rem] 2xl:h-[70rem] grid-cols-4 gap-5 md:mx-14 opacity-95 light">
+
+            <div className="row-span-2 col-span-4 md:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-8 bg-gradient-to-bl from-blue-950 to-black shadow-lg bg-opacity-70">
                 <span className="flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl mt-2 text-gray-200 font-bold">
                         <span className="text-transparent bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 bg-clip-text">
@@ -56,20 +57,20 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="relative row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 p-4 bg-gradient-to-b from-blue-800 shadow-lg pt-5">
+            <div className="relative row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-b from-blue-800 shadow-lg">
                 <img
-                    className="h-7 w-auto absolute top-7"
+                    className="h-8 w-auto absolute right-8 top-10 md:top-16 lg:top-10"
                     src={colombia}
                     alt="Bandera de Colombia"
                 />
-                <h4 className="text-3xl md:text-4xl font-semibold ml-6 m-4">
+                <h4 className="text-3xl lg:text-4xl font-semibold">
                     <span className="text-transparent bg-gradient-to-r from-yellow-400 via-blue-600 to-red-500 bg-clip-text">
                         Colombia
                     </span>
                 </h4>
             </div>
 
-            <div className="row-span-2 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-1 rounded-xl p-0 border-y-2 border-blue-800/60 bg-gradient-to-t shadow-lg">
+            <div className="row-span-2 col-span-2 md:col-span-1 rounded-xl p-0 border-y-2 border-blue-800/60 bg-gradient-to-t shadow-lg">
                 <video
                     className="object-cover h-full w-full rounded-xl lg:block"
                     src={beach}
@@ -79,8 +80,8 @@ export const BentoGrid = () => {
                 />
             </div>
 
-            <div className="flex row-span-1 col-span-2 md:col-span-2 lg:col-span-1 rounded-xl border-t-2 justify-center border-blue-500/60 bg-gradient-to-b from-blue-900 to-blue-950" >
-                <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-8">
+            <div className="flex row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 justify-center border-blue-500/60 bg-gradient-to-b from-blue-900 to-blue-950" >
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-3 md:gap-8">
                     <a
                         href="https://www.linkedin.com/in/nicolas-giraldo05"
                         target="_blank"
@@ -115,38 +116,13 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="hidden lg:flex col-span-2 md:col-span-1 row-span-1 justify-center rounded-xl border-t-2 border-slate-600/30 bg-gradient-to-br from-blue-700 to-black shadow-lg">
-                <a
-                    className="flex flex-col justify-center items-center h-full w-full p-4 font-bold"
-                    target="_blank"
-                    href="https://twitter.com/NicoG_Gg"
-                    rel="noreferrer"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="550"
-                        height="550"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            fill="#fff"
-                            d="M18.205 2.25h3.308l-7.227 8.26 8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231 5.45-6.231h.002zm-1.161 17.52h1.833L7.045 4.126H5.078L17.044 19.77z"
-                        ></path>
-                    </svg>
-                    <h4 className="text-3xl text-white font-medium">
-                        @NicoG_Gg
-                    </h4>
-                </a>
-            </div>
-
-            <div className="flex flex-col h-80 md:h-60 row-span-3 col-span-4 md:col-span-4 rounded-xl border-y-2 p-1 border-b-blue-500 border-t-blue-950/80 hover:border-t-blue-800 hover:border-b-blue-300 bg-gradient-to-t from-blue-900 to-black shadow-lg">
-                <h4 className="text-4xl font-semibold ml-2 md:ml-6 m-4">
+            <div className="flex flex-col row-span-1 col-span-4 rounded-xl border-y-2 p-2 border-b-blue-500 border-t-blue-950/80 hover:border-t-blue-800 hover:border-b-blue-300 bg-gradient-to-t from-blue-900 to-black shadow-lg gap-6">
+                <h4 className="text-4xl font-semibold ml-2 mt-4 md:ml-6">
                     <span className="text-transparent bg-gradient-to-r from-blue-300 via-blue-500 to-blue-300 bg-clip-text">
                         Tecnologias
                     </span>
                 </h4>
-                <div className="grid place-items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-11 m-3 ml-2 md:ml-0 pb-2 gap-y-3">
+                <div className="grid place-items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-11 pb-2 gap-y-3 lg:mt-0 2xl:mt-10">
                     <section className="flex flex-col justify-center items-center">
                         <FaHtml5
                             className="text-4xl"
