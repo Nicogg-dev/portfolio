@@ -1,4 +1,4 @@
-import { BentoGrid } from "./BentoGrid";
+import { BentoGrid } from "./components/BentoGrid";
 import { useEffect, useState } from "react";
 
 import gifexpertapp from "/gifexpertapp.mp4";
@@ -28,7 +28,7 @@ export const Home = () => {
             <BentoGrid />
 
             {/* Experiencias y proyectos */}
-            <div className="flex flex-col opacity-90 mt-40 md:mt-0">
+            <div className="flex flex-col opacity-95 mt-40 md:mt-0">
                 <h4
                     id="proyectos"
                     className="text-white font-bold text-4xl text-center"

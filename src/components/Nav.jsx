@@ -55,7 +55,7 @@ export const Nav = () => {
                         About
                     </a>
                     <a
-                        href="#"
+                        href="#proyectos"
                         className="hover:text-black hover:bg-gradient-to-r hover:from-blue-400 hover:to-white  text-white block rounded-md px-3 py-2 text-base font-medium"
                     >
                         Projects

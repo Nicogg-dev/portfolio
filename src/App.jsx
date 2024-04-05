@@ -1,4 +1,4 @@
-import { Home } from './components/Home'
+import { Home } from './Home'
 import { Nav } from './components/Nav'
 import ParticlesComponent from './components/particles';
 

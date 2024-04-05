@@ -59,7 +59,7 @@ export const BentoGrid = () => {
 
             <div className="relative row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-b from-blue-800 shadow-lg">
                 <img
-                    className="h-8 w-auto absolute right-8 top-10 md:top-16 lg:top-10"
+                    className="h-8 w-auto"
                     src={colombia}
                     alt="Bandera de Colombia"
                 />
