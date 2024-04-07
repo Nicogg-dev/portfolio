@@ -6,7 +6,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 // Importar el engine de manera relativa
 
-const ParticlesComponent = (props) => {
+const ParticlesComponent = () => {
 
   const [init, setInit] = useState(false);
   // this should be run only once per application lifetime
@@ -50,7 +50,7 @@ const ParticlesComponent = (props) => {
               distance: 50,
               duration: 3,
               opacity: 8,
-              size: 8,
+              size: 7,
               speed: 3
             }
           }
@@ -70,8 +70,8 @@ const ParticlesComponent = (props) => {
             consent: false,
             distance: 30,
             enable: true,
-            opacity: 0.6,
-            width: 1.5
+            opacity: 0.5,
+            width: 0.6
           },
           move: {
             enable: true,
@@ -118,7 +118,7 @@ const ParticlesComponent = (props) => {
           inline: {
             arrangement: "equidistant"
           },
-          scale: 1,
+          scale: 0.6,
           type: "inline",
           url: "https://particles.js.org/images/smalldeer.svg"
         }

@@ -24,7 +24,7 @@ export const Home = () => {
     }, [playVideo]);
 
     return (
-        <div className="mx-5">
+        <div className="relative mx-5">
             <BentoGrid />
 
             {/* Experiencias y proyectos */}
