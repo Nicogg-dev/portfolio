@@ -19,6 +19,7 @@ const ParticlesComponent = (props) => {
       //await loadFull(engine);
       await loadSlim(engine);
       //await loadBasic(engine);
+      await loadPolygonMaskPlugin(tsParticles);
     }).then(() => {
       setInit(true);
     });
@@ -31,103 +32,103 @@ const ParticlesComponent = (props) => {
 
   const options = useMemo(
     () => ({
-      background: {
-        color: {
-          value: "#06010d",
-        },
-      },
-      fpsLimit: 120,
-      interactivity: {
-        events: {
-          onHover: {
-            enable: true,
-            mode: ["grab", "bubble"]
+        background: {
+          color: {
+            value: "#06010d"
           }
         },
-        modes: {
-          bubble: {
-            distance: 40,
-            duration: 3,
-            opacity: 9,
-            size: 10,
-            speed: 3
-          }
-        }
-      },
-      particles: {
-        color: {
-          value: "#5516f5",
-          animation: {
-            enable: false, // si se activa, el color cambia
-            speed: 20,
-            sync: true
-          }
-        },
-        links: {
-          blink: false,
-          color: "#2c009c",
-          consent: false,
-          distance: 30,
-          enable: true,
-          opacity: 0.3,
-          width: 0.5
-        },
-        move: {
-          enable: true,
-          outModes: "bounce",
-          speed: { min: 0.5, max: 1 }
-        },
-        number: {
-          value: 150
-        },
-        opacity: {
-          animation: {
-            enable: true,
-            speed: 2,
-            sync: false
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "bubble"
+            }
           },
-          random: true,
-          value: { min: 0.1, max: 2 }
-        },
-        shape: {
-          type: "circle"
-        },
-        size: {
-          animation: {
-            enable: true,
-            speed: 20,
-            sync: false
-          },
-          random: true,
-          value: { min: 0.1, max: 2 }
-        }
-      },
-      polygon: {
-        draw: {
-          enable: true,
-          stroke: {
-            color: "#fff",
-            width: 1,
-            opacity: 0.8
+          modes: {
+            bubble: {
+              distance: 50,
+              duration: 3,
+              opacity: 8,
+              size: 8,
+              speed: 3
+            }
           }
         },
-        move: {
-          radius: 20
+        particles: {
+          color: {
+            value: "#00FFFF",
+            animation: {
+              enable: false, // cambia color de las particulas
+              speed: 20,
+              sync: true
+            }
+          },
+          links: {
+            blink: false,
+            color: "#FFFFFF",
+            consent: false,
+            distance: 30,
+            enable: true,
+            opacity: 0.6,
+            width: 1.5
+          },
+          move: {
+            enable: true,
+            outModes: "bounce",
+            speed: { min: 0.5, max: 1 }
+          },
+          number: {
+            value: 200
+          },
+          opacity: {
+            animation: {
+              enable: true,
+              speed: 2,
+              sync: false
+            },
+            random: false,
+            value: { min: 0.05, max: 1 }
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            animation: {
+              enable: false,
+              speed: 40,
+              sync: false
+            },
+            random: true,
+            value: { min: 0.1, max: 1 }
+          }
         },
-        inline: {
-          arrangement: "equidistant"
-        },
-        scale: 1,
-        type: "inline",
-        url: "https://particles.js.org/images/smalldeer.svg"
-      }
-    }),
+        polygon: {
+          draw: {
+            enable: true,
+            stroke: {
+              color: "#ffffff",
+              width: 0.5,
+              opacity: 0.5
+            }
+          },
+          move: {
+            radius: 10
+          },
+          inline: {
+            arrangement: "equidistant"
+          },
+          scale: 1,
+          type: "inline",
+          url: "https://particles.js.org/images/smalldeer.svg"
+        }
+      }),
     [],
   );
 
 
   // eslint-disable-next-line react/prop-types
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  return <Particles id="tsparticles" init={particlesLoaded} options={options} />;
 };
 
 export default ParticlesComponent;
