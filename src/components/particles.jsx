@@ -59,14 +59,14 @@ const ParticlesComponent = () => {
           color: {
             value: "#00FFFF",
             animation: {
-              enable: false, // cambia color de las particulas
+              enable: true, // cambia color de las particulas
               speed: 20,
               sync: true
             }
           },
           links: {
             blink: false,
-            color: "#FFFFFF",
+            color: "random",
             consent: false,
             distance: 30,
             enable: true,
@@ -108,8 +108,8 @@ const ParticlesComponent = () => {
             enable: true,
             stroke: {
               color: "#ffffff",
-              width: 0.5,
-              opacity: 0.5
+              width: 0.4,
+              opacity: 0.4
             }
           },
           move: {
