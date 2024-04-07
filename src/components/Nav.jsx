@@ -13,25 +13,18 @@ export const Nav = () => {
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                         <div className="flex flex-shrink-0 items-center"></div>
                         <div className="min-[0px]:hidden min-[650px]:block sm:ml-6">
-                            <div className="flex space-x-4">
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-blue-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
-                                    aria-current="page"
-                                >
+                            <div className="flex space-x-4 gap-4">
+
+                                <a role="link" className="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-blue-400 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100" href="#">
                                     Home
                                 </a>
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-blue-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
-                                >
-                                    About
+
+                                <a role="link" className="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-blue-400 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100" href="#proyectos">
+                                    Proyects
                                 </a>
-                                <a
-                                    href="#proyectos"
-                                    className="text-white hover:text-black hover:bg-gradient-to-r  hover:from-blue-400 hover:to-white rounded-md px-3 py-2 text-base font-medium"
-                                >
-                                    Projects
+
+                                <a role="link" className="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-blue-400 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100" href="#about">
+                                    About
                                 </a>
                             </div>
                         </div>

@@ -39,63 +39,88 @@ const ParticlesComponent = (props) => {
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "repulse",
-          },
           onHover: {
             enable: true,
-            mode: 'grab',
-          },
+            mode: ["grab", "bubble"]
+          }
         },
         modes: {
-          push: {
-            distance: 200,
-            duration: 15,
-          },
-          grab: {
-            distance: 150,
-          },
-        },
+          bubble: {
+            distance: 40,
+            duration: 3,
+            opacity: 9,
+            size: 10,
+            speed: 3
+          }
+        }
       },
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: "#5516f5",
+          animation: {
+            enable: false, // si se activa, el color cambia
+            speed: 20,
+            sync: true
+          }
         },
         links: {
-          color: "#FFFFFF",
-          distance: 150,
+          blink: false,
+          color: "#2c009c",
+          consent: false,
+          distance: 30,
           enable: true,
           opacity: 0.3,
-          width: 1,
+          width: 0.5
         },
         move: {
-          direction: "none",
           enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: true,
-          speed: 6,
-          straight: false,
+          outModes: "bounce",
+          speed: { min: 0.5, max: 1 }
         },
         number: {
-          density: {
-            enable: true,
-          },
-          value: 150,
+          value: 150
         },
         opacity: {
-          value: 1.0,
+          animation: {
+            enable: true,
+            speed: 2,
+            sync: false
+          },
+          random: true,
+          value: { min: 0.1, max: 2 }
         },
         shape: {
-          type: "circle",
+          type: "circle"
         },
         size: {
-          value: { min: 1, max: 3 },
-        },
+          animation: {
+            enable: true,
+            speed: 20,
+            sync: false
+          },
+          random: true,
+          value: { min: 0.1, max: 2 }
+        }
       },
-      detectRetina: true,
+      polygon: {
+        draw: {
+          enable: true,
+          stroke: {
+            color: "#fff",
+            width: 1,
+            opacity: 0.8
+          }
+        },
+        move: {
+          radius: 20
+        },
+        inline: {
+          arrangement: "equidistant"
+        },
+        scale: 1,
+        type: "inline",
+        url: "https://particles.js.org/images/smalldeer.svg"
+      }
     }),
     [],
   );
