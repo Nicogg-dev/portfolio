@@ -30,9 +30,9 @@ export const BentoGrid = () => {
     }, [playVideo]);
 
     return (
-        <div className="md:mt-20 grid grid-rows-4 lg:h-[47rem] 2xl:h-[70rem] grid-cols-4 gap-5 md:mx-14 opacity-95 light">
+        <div className="md:mt-20 grid grid-rows-4 lg:h-[47rem] 2xl:h-[70rem] grid-cols-4 gap-5 md:mx-14 light">
 
-            <div className="row-span-2 col-span-4 md:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-8 bg-gradient-to-bl from-blue-950 to-black shadow-lg bg-opacity-70">
+            <div className="relative row-span-2 col-span-4 md:col-span-2 rounded-xl border-y-2 border-blue-600/40 hover:border-blue-400/60 p-8 bg-gradient-to-bl from-blue-950 to-black shadow-lg opacity-80 hover:opacity-100">
                 <span className="flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl mt-2 text-gray-200 font-bold">
                         <span className="text-transparent bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 bg-clip-text">
@@ -57,7 +57,7 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="relative row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-b from-blue-800 shadow-lg">
+            <div className="relative row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 flex flex-col items-center justify-center gap-2 border-blue-500/60 bg-gradient-to-b from-blue-800 shadow-lg opacity-80 hover:opacity-100">
                 <img
                     className="h-8 w-auto"
                     src={colombia}
@@ -70,7 +70,7 @@ export const BentoGrid = () => {
                 </h4>
             </div>
 
-            <div className="row-span-2 col-span-2 md:col-span-1 rounded-xl p-0 border-y-2 border-blue-800/60 bg-gradient-to-t shadow-lg">
+            <div className="relative row-span-2 col-span-2 md:col-span-1 rounded-xl p-0 border-y-2 border-blue-800/60 bg-gradient-to-t shadow-lg opacity-80 hover:opacity-100">
                 <video
                     className="object-cover h-full w-full rounded-xl lg:block"
                     src={beach}
@@ -80,7 +80,7 @@ export const BentoGrid = () => {
                 />
             </div>
 
-            <div className="flex row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 justify-center border-blue-500/60 bg-gradient-to-b from-blue-900 to-blue-950" >
+            <div className="relative flex row-span-1 col-span-2 md:col-span-1 rounded-xl border-t-2 justify-center border-blue-500/60 bg-gradient-to-b from-blue-900 to-blue-950 opacity-80 hover:opacity-100" >
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-3 md:gap-8">
                     <a
                         href="https://www.linkedin.com/in/nicolas-giraldo05"
@@ -116,7 +116,7 @@ export const BentoGrid = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col row-span-1 col-span-4 rounded-xl border-y-2 p-2 border-b-blue-500 border-t-blue-950/80 hover:border-t-blue-800 hover:border-b-blue-300 bg-gradient-to-t from-blue-900 to-black shadow-lg gap-6">
+            <div className="relative flex flex-col row-span-1 col-span-4 rounded-xl border-y-2 p-2 border-b-blue-500 border-t-blue-950/80 hover:border-t-blue-800 hover:border-b-blue-300 bg-gradient-to-t from-blue-900 to-black shadow-lg gap-6 opacity-80 hover:opacity-100">
                 <h4 className="text-4xl font-semibold ml-2 mt-4 md:ml-6">
                     <span className="text-transparent bg-gradient-to-r from-blue-300 via-blue-500 to-blue-300 bg-clip-text">
                         Tecnologias
